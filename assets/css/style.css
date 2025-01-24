@@ -1,0 +1,170 @@
+body {
+    background-image: url("/assets/img/Fotolia_116406374_Subscription_Monthly_M.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.logo-container {
+    width: 200px;
+    /* Imposta la larghezza desiderata */
+    height: 100px;
+    /* Imposta l'altezza desiderata */
+    background-image: url('url_del_tuo_logo');
+    /* Aggiungi l'URL del tuo logo */
+    background-size: contain;
+    /* Assicura che il logo sia completamente visibile */
+    background-repeat: no-repeat;
+    /* Impedisce la ripetizione del logo */
+    background-position: center;
+    /* Centra il logo all'interno del contenitore */
+    display: inline-block;
+    /* Permette al contenitore di adattarsi alle dimensioni del logo */
+}
+
+.logo-container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 100px;
+
+}
+
+header {
+    height: 200px;
+    background-image: url("/assets/img/logo1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+
+}
+
+nav {
+
+    /*background-color: rgba(150,0,0,0.6); */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Monserrat';
+    padding: 0 10px;
+}
+
+.menu:hover {
+    color: rgb(143, 15, 40);
+    transition: 0.3s;
+}
+
+main {
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.contact {
+    background-color: cadetblue;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.contact .contact-info a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 420px; ) {
+    .map {
+        margin-top: 280px;
+    }
+}
+
+
+
+footer {
+    height: 100px;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: whitesmoke;
+}
+
+p {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#footer{
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.linkF{
+    text-decoration: none;
+    color: yellow;
+}
+/* 2) adesso vado a creare un'altra scatola che contiene tuttu le scvatole di prima 
+lo vado a creare sopra in questo file 
+*/
+
+/* 3) branch devlogo
+passo in cui aggiungo il logo all'interno dell'header
+    a) primo controllo le dimensioni dell'immagine in questo caso sono 200x200 ,
+    quindi modifico le dimensioni dell'header a height:200px
+    b) aggiungo il logo all'interno dell header
+    con il comando background-image(url(" ")
+    in automaticoma l'immagine viene ripetuta per tutto l'header 
+    in questo caso 5 volte in linea orizzontale in, 
+    per poter togliere questa ripetizione automatica
+    basta scrivere background-repeat:none.
+    3) ma adesso il logo viene visualizzato a sinistra, ma io voglio centrarlo
+    basta aggiungere la proprietà    background-position: center;
+    4) infine tolgo il colore del tag header ovvero background-color:white
+    5) creo un nuovo branch test1
+    6) modifico il file style.css precisamente nell'header , dato che rimpicciolendo la pagina
+    ad un certo punto non si vede più il contenuto, per sistemare questo problema 
+    inserisco margin-left:auto e margin-right:auto del tag header , inoltre inserisco una
+    dimensione , cioè non voglio che occupa tutta la pagina diciamo del mio browser, devo
+    inserire una max-width: 800px che sarebbe una massima larghezza, in questo modo anche se lo allargo 
+    resterà sempre 800px, 
+    7) Adesso andiamo a inserire un paio di cose
+      a)vado inserire un h1 all'interno del tag main precisamente nel file index.html
+      b) aggiungo un paragrafo con il contenuto.
+      adesso vado a centrare il testo , vado nel file style.css e in corrispondenza del 
+      tag main inserisco la proprietà text-align:center.
+      8) Adesso vado inserire la nostra immagine di sfondo direttamente nel body, 
+        a) background-image: url("/assets/img/136.jpg"); 
+        b)inserisco questa per non esere l'immagine ripetuta background-repeat: no-repeat;ù
+        c) background-size: cover; 
+         d)background-position: center; per centrare l'immagine di sfondo anche quando viene ridimensionata la pagina;
+9) adesso come ultima cosa devo riempire tutta la pagina, nel file css inserisco la proprietà per il documento
+html , altezza 100% nel seguente modo height:100%
+10) sistemo i caratteri vado su google font
+a)  font-family: "Cabin", sans-serif;
+b)font-family: 
+c) font-family: "Knewave", cursive;
+*/
